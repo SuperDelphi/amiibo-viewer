@@ -34,6 +34,10 @@ nav a:hover {
     color: var(--secondary-text);
 }
 
+nav a:hover .simple-icon {
+    stroke: var(--secondary-text) !important;
+}
+
 nav a img {
     color: var(--text) !important;
     vertical-align: top;
@@ -47,6 +51,15 @@ nav a img {
     padding: 15px 20px;
     border: solid var(--primary-light) 1px;
     border-radius: 50px;
+    transition: 150ms;
+}
+
+#random-link:hover {
+    border-color: var(--primary);
+}
+
+#random-link:active {
+    background-color: var(--primary-transparent-2);
 }
 
 #site-logo {

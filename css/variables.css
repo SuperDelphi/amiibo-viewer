@@ -7,7 +7,8 @@
     /* Colors */
     --text: #5a5a5a;
     --primary: #fb9500;
-    --primary-transparent: #fb9500a0;
+    --primary-transparent-1: #fb9500a0;
+    --primary-transparent-2: #fb950010;
     --primary-text: #fba100;
     --primary-highlight: #ffc817;
     --primary-hover: #ffd643;

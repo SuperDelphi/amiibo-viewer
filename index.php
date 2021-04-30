@@ -7,21 +7,37 @@
     <head>
         <meta charset="UTF-8">
         <title>Amiibo Viewer | Accueil</title>
-        <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" href="favicon.ico">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="js/constants.js"></script>
         <script src="js/lib/wrapper.js"></script>
+        <script src="js/lib/svgInjector.js"></script>
         <script src="js/index/injector.js"></script>
         <script src="js/index/index.js" defer></script>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.php"><img src="img/icons/home_icon.svg" alt="Accueil">&nbsp;Accueil</a></li>
-                    <li><a href="about.html"><img src="img/icons/about_icon.svg" alt="À propos">&nbsp;À propos</a></li>
-                    <li><a id="random-link" href="amiibo.php?random"><img src="img/icons/random_icon.svg" alt="Aléatoire">&nbsp;Figurine aléatoire</a></li>
+                    <li>
+                        <a href="index.php">
+                            <img class="simple-icon" src="img/icons/home_icon.svg" alt="Accueil">
+                            &nbsp;Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <img class="simple-icon" src="img/icons/about_icon.svg" alt="À propos">
+                            &nbsp;À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a id="random-link" href="amiibo.php?random">
+                            <img src="img/icons/random_icon.svg" alt="Aléatoire">
+                            &nbsp;Figurine aléatoire
+                        </a>
+                    </li>
                 </ul>
                 <a id="site-logo" href="index.php"><img src="img/site_logo.svg" alt="Logo Amiibo Viewer"></a>
                 <div id="aside-info">
@@ -44,7 +60,7 @@
             <hr>
             <section id="amiibo-list">
                 <img id="loading-img" src="img/loading.png" alt="Chargement des amiibos...">
-<!--               Populating here -->
+                <!--               Populating here -->
             </section>
             <div id="bottom-gradient"></div>
         </main>
