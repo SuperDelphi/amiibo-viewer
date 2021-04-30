@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@keyframes loading {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moving-bg {
+    from {
+        background-position-x: 100px;
+    }
+    to {
+        background-position-x: calc(100vw + 100px);
+    }
+}

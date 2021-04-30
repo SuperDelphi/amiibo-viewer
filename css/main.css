@@ -1,0 +1,100 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+@import "variables.css";
+@import "animations.css";
+@import "header.css";
+@import "amiibo.css";
+
+* {
+    font-family: Gotham, Arial, sans-serif;
+    font-weight: 500;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+hr {
+    opacity: 0.20;
+    margin: 2rem 0;
+    border-color: var(--mid-gray);
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    color: var(--dark-gray);
+}
+
+/* Main content */
+
+main {
+    background-color: var(--background-gray);
+    background-image: url("../img/light_amiibo_bg.svg");
+    background-repeat: repeat-x;
+    background-size: 100vw;
+    background-position: 100px 360px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    border-radius: 50px 50px 0 0;
+    padding: 4rem 10vw;
+    animation: moving-bg 120s infinite forwards;
+    animation-timing-function: linear;
+}
+
+main > h2 {
+    margin-bottom: 0;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#search-bar input {
+    box-sizing: content-box;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--search-bar-bg);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    min-width: 25vw;
+    border: none;
+}
+
+#search-bar input + img {
+    height: 1rem;
+    transform: translateX(-2rem);
+}
+
+#search-bar input::placeholder {
+    opacity: 1;
+    color: var(--mid-gray);
+}
+
+#loading-img {
+    height: 100px;
+    animation: loading 0.66s infinite;
+    animation-timing-function: ease-in-out;
+    margin: 20vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}

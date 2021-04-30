@@ -1,0 +1,129 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+#amiibo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.amiibo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 4rem;
+    /* Au maximum 4 par ligne */
+    flex-basis: 25%;
+    text-align: center;
+    animation: fade-in 0.5s 1 forwards;
+    text-decoration: none;
+}
+
+.amiibo h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.35rem;
+    font-weight: normal;
+
+    /* Stretching */
+    transform: scaleX(0.95);
+}
+
+.amiibo h4 {
+    margin-top: 0.4rem;
+    color: var(--mid-gray);
+
+    /* Stretching */
+    transform: scaleX(0.95);
+}
+
+.sprite-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.amiibo-sprite, .amiibo-shadow {
+    max-height: 300px;
+}
+
+.amiibo-sprite {
+    opacity: 0;
+    z-index: 1;
+    transition: all 300ms, opacity 0.5s;
+}
+
+.sprite-container:hover .amiibo-sprite {
+    transform: scale(1.03);
+}
+
+.amiibo-shadow {
+    opacity: 0;
+    bottom: 0;
+    position: absolute;
+    filter: blur(30px);
+    transition: 300ms;
+}
+
+.sprite-container:hover .amiibo-sprite + .amiibo-shadow {
+    opacity: 0.50;
+}
+
+.amiibo-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--primary);
+    border: solid var(--primary-highlight) 3px;
+    border-radius: 15px;
+    padding: 0.9rem 2rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    z-index: 3;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 300ms;
+    box-shadow: 0 5px 15px 0 var(--primary-transparent);
+}
+
+.sprite-container:hover .amiibo-btn {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: 100ms;
+}
+
+.amiibo-btn:hover {
+    background-color: var(--primary-text);
+    border-color: var(--primary-hover);
+    transform: translate(-50%, -50%) scale(1.05) !important;
+    transition: 100ms;
+}
+
+.amiibo-btn:active {
+    transform: translate(-50%, -50%) scale(1.02) !important;
+    transition: 100ms;
+}
+
+.amiibo-btn img {
+    height: 1.05rem;
+    vertical-align: top;
+}
+
+#bottom-gradient {
+    background: linear-gradient(to top, var(--background-gray), transparent);
+    height: 150px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
