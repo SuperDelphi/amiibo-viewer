@@ -23,6 +23,19 @@
     }
 }
 
+@keyframes roll-in {
+    from {
+        opacity: 0;
+        transform-origin: top;
+        transform: perspective(30px) rotateX(-10deg) translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform-origin: top;
+        transform: perspective(30px) rotateX(0deg);
+    }
+}
+
 @keyframes moving-bg {
     from {
         background-position-x: 100px;

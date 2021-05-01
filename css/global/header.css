@@ -38,7 +38,7 @@ nav a:hover .simple-icon {
     stroke: var(--secondary-text) !important;
 }
 
-nav a img {
+nav a svg {
     color: var(--text) !important;
     vertical-align: top;
     height: 1rem;
@@ -72,8 +72,12 @@ nav a img {
 }
 
 #site-logo img {
+    opacity: 0;
     height: 2.5rem;
     z-index: -5;
+    animation: roll-in 300ms 1 forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-delay: 150ms;
 }
 
 #aside-info {
@@ -102,12 +106,27 @@ nav a img {
 }
 
 #blog-link {
+    box-sizing: border-box;
     border: solid var(--light-gray) 1px;
     border-radius: 50px;
     padding: 0.7rem;
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: 1rem;
+    text-align: center;
+    transition: 150ms;
+}
+
+#blog-link:hover {
+    border-color: var(--primary-highlight);
+    background-color: var(--primary-light);
+}
+
+#blog-link:active {
+    transform: scale(0.95);
 }
 
 #blog-link img {
     height: 2rem;
+    transition: 200ms;
 }

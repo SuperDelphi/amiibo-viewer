@@ -12,4 +12,12 @@ const ID_PREFIX = "amiibo-";
 const SCROLL_TOLERANCE = 200;
 
 // Nombre d'amiibos ajoutés à charge ajout dans la page
-const AMOUNT_PER_PAGE = 12;
+const AMOUNT_PER_PAGE = 16;
+
+// Régions du monde
+const REGIONS = {
+    au: "Australie",
+    eu: "Europe",
+    jp: "Japon",
+    na: "Amérique du Nord"
+};

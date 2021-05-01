@@ -7,7 +7,7 @@ const createAmiiboElement = (id, name, gameSeries, image) => {
     const amiiboSpriteImg = document.createElement("img");
     amiiboSpriteImg.classList.add("amiibo-sprite");
     amiiboSpriteImg.setAttribute("src", image);
-    amiiboSpriteImg.setAttribute("alt", name + "(" + gameSeries + ")");
+    amiiboSpriteImg.setAttribute("alt", name + " (" + gameSeries + ")");
     amiiboSpriteImg.addEventListener("load", event => {
         event.target.style.opacity = "1";
     });
@@ -15,7 +15,7 @@ const createAmiiboElement = (id, name, gameSeries, image) => {
     const amiiboShadowImg = amiiboSpriteImg.cloneNode();
     amiiboShadowImg.classList.remove("amiibo-sprite");
     amiiboShadowImg.classList.add("amiibo-shadow");
-    amiiboShadowImg.setAttribute("alt", null);
+    amiiboShadowImg.setAttribute("alt", "");
     // Création des "sprinkles"
     const leftSprinkle = document.createElement("img");
     leftSprinkle.setAttribute("src", "img/icons/btn_sprinkles_left.svg");
@@ -56,7 +56,7 @@ const addAmiibos = amiibos => {
     }
 };
 
-const updateTitle = amiiboAmount => {
+const updateListTitle = amiiboAmount => {
     const amiiboListTitleElement = document.getElementById("amiibo-list-title");
     amiiboListTitleElement.textContent = `Tous les amiibos (${amiiboAmount})`;
 };

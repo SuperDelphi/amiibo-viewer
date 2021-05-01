@@ -1,0 +1,85 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+#games article {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem 2.3rem;
+    animation: fade-in 300ms 1 forwards;
+    animation-timing-function: linear;
+}
+
+#games article:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#games article * {
+    color: var(--text);
+}
+
+#games h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#games span {
+    font-weight: bold;
+}
+
+#games ul {
+    margin: 0;
+    padding: 0;
+}
+
+#games li {
+    font-size: 1.1rem;
+    font-weight: normal;
+    list-style: none;
+}
+
+#games li {
+    transform-origin: left;
+    transform: scaleX(0.95);
+}
+
+#games li::before {
+    content: url("../../img/icons/check_icon.svg");
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin-right: 0.75rem;
+}
+
+/* Switch */
+
+.switch-game {
+    background: linear-gradient(to right, white, var(--switch-bg));
+}
+
+.switch-game span {
+    color: var(--switch-text) !important;
+}
+
+/* 3DS */
+
+.threeds-game {
+    background: linear-gradient(to right, white, var(--threeds-bg));
+}
+
+.threeds-game span {
+    color: var(--threeds-text) !important;
+}
+
+/* Wii U */
+
+.wiiu-game {
+    background: linear-gradient(to right, white, var(--wiiu-bg));
+}
+
+.wiiu-game span {
+    color: var(--wiiu-text) !important;
+}

@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+@import "global/variables.css";
+@import "global/animations.css";
+@import "global/header.css";
+
+* {
+    font-family: Gotham, Arial, sans-serif;
+    font-weight: 500;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+hr {
+    opacity: 0.20;
+    margin: 2rem 0;
+    border-color: var(--mid-gray);
+    border-style: solid;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    color: var(--dark-gray);
+}
+
+#loading-img {
+    display: block;
+    height: 100px;
+    animation: loading 0.66s infinite;
+    animation-timing-function: ease-in-out;
+    margin: 25vh auto;
+}
+
+.hidden {
+    display: none !important;
+}

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         addAmiibos(data);
 
         // Mise à jour du titre
-        updateTitle((await amiiboList.getAmiibos()).length);
+        updateListTitle((await amiiboList.getAmiibos()).length);
 
         window.addEventListener("scroll", async event => {
             // Si l'utilisateur arrive en base de la page (avec tolérance)
