@@ -44,7 +44,7 @@
                                 </g>
                             </g>
                         </g>
-                    </svg>&nbsp;Figurine aléatoire
+                    </svg>&nbsp;Amiibo aléatoire
                 </a>
             </li>
         </ul>

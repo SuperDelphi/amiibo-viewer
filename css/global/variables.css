@@ -3,18 +3,19 @@
  */
 
 :root {
-    --header-padding: 50px 60px;
     /* Colors */
     --text: #5a5a5a;
-    --primary: #fb9500;
+    --primary: #fa940e;
     --primary-transparent-1: #fb9500a0;
     --primary-transparent-2: #fb950010;
     --primary-text: #fba100;
     --primary-highlight: #ffc817;
-    --primary-hover: #ffd643;
+    --primary-hover-1: #ffae25;
+    --primary-hover-2: #ffd643;
     --secondary-text: #5169c5;
     /* Variants */
     --primary-light: #fee5c0;
+    --darker-gray: #959695;
     --dark-gray: #aaaaaa;
     --mid-gray: #bababa;
     --light-gray: #d4d4d4;

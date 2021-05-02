@@ -4,14 +4,15 @@
 
 @import "../global.css";
 @import "game.css";
+@import "responsive.css";
 
 main {
     background-color: var(--secondary-text);
-    background-image: url("../../img/orange_amiibo_bg.svg");
+    background-image: url("../../img/blue_amiibo_bg.svg");
     background-repeat: repeat-x;
     background-size: 100vw;
     background-position: 100px 100px;
-    margin: 15vw 4vw;
+    margin: 2.5rem 4vw 4vw 4vw;
     padding: 9rem 5vw 5vw 5vw;
     border-radius: 40px;
     position: relative;
@@ -19,7 +20,7 @@ main {
     animation-timing-function: linear;
 }
 
-hr {
+main hr {
     height: 1px;
     border: none;
     background-color: white;
@@ -68,4 +69,38 @@ main h4 {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 2rem;
+}
+
+#back-link {
+    display: inline-block;
+    margin-top: 10vh;
+    margin-left: 4vw;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--darker-gray);
+    padding: 15px 20px;
+    border: solid var(--light-gray) 1px;
+    border-radius: 50px;
+    transition: 150ms;
+}
+
+#back-link:hover {
+    color: var(--text);
+    border-color: var(--text);
+}
+
+#back-link:active {
+    background-color: var(--background-gray);
+}
+
+#back-link svg {
+    height: 1rem;
+    vertical-align: top;
+    margin-right: 0.25rem;
+    transition: stroke 150ms;
+}
+
+#back-link:hover svg {
+    stroke: var(--text) !important;
 }

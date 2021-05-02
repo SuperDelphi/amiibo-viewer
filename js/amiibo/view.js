@@ -106,6 +106,8 @@ const hideLoading = () => {
 }
 
 const showPage = () => {
+    const backLink = document.getElementById("back-link");
     const mainElement = document.getElementsByTagName("main")[0];
+    backLink.classList.remove("hidden");
     mainElement.classList.remove("hidden");
 };

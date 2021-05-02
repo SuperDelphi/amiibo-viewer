@@ -1,0 +1,154 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+/* Bouton */
+
+#hamburger-btn {
+    position: fixed;
+    background-color: var(--primary);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 30px;
+    transform: translateY(8rem) rotate(-15deg);
+    box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.35);
+    transition: transform 300ms, opacity 300ms;
+}
+
+#hamburger-btn img {
+    transform: rotate(15deg) scale(0.45);
+}
+
+#hamburger-btn.left {
+    bottom: 2rem;
+    left: 2rem;
+}
+
+#hamburger-btn.right {
+    bottom: 2rem;
+    right: 2rem;
+}
+
+#hamburger-btn.hidden {
+    display: inline-block !important;
+    transform: translateY(8rem) rotate(-15deg);
+    opacity: 0;
+}
+
+/* Menu */
+
+#hamburger-menu {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    background-color: var(--primary);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    transition: 400ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.0);
+    overflow: hidden;
+}
+
+#hamburger-menu * {
+    color: white;
+}
+
+#hamburger-menu > div {
+    text-align: center;
+}
+
+#hamburger-menu a {
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: background-color 100ms;
+}
+
+#hamburger-menu a img {
+    height: 1.2rem;
+    vertical-align: top;
+    margin-right: 0.25rem;
+}
+
+#hamburger-menu a:hover {
+    /* Pour la satisfaction personnelle du développeur */
+    background-color: var(--primary-text);
+}
+
+#hamburger-menu a:active {
+    background-color: var(--primary-hover-1);
+}
+
+#hamburger-menu hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 0 1.5rem;
+}
+
+#hamburger-menu .bottom {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+#hamburger-menu .bottom.lefty {
+    flex-direction: row-reverse;
+}
+
+#hamburger-menu .bottom.lefty #change-hand-mode {
+    margin-left: 0;
+}
+
+#hamburger-menu .bottom.lefty #close-menu-link {
+    margin-left: 1rem;
+}
+
+#close-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#close-menu-link img {
+    height: 40%;
+}
+
+#change-hand-mode {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 5rem;
+    flex-grow: 2;
+    margin-left: 1rem;
+    background-color: #fbb756;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+#change-hand-mode:hover {
+    background-color: #ffbe68;
+}
+
+#change-hand-mode:active {
+    background-color: #ffca90;
+}
+
+#change-hand-mode span {
+    font-size: 1.1rem;
+}
+
+#change-hand-mode img {
+    vertical-align: middle;
+    height: 2rem;
+    margin-left: 0.5rem;
+}

@@ -7,6 +7,8 @@
 @import "global/variables.css";
 @import "global/animations.css";
 @import "global/header.css";
+@import "global/hamburger.css";
+@import "global/reponsive.css";
 
 * {
     font-family: Gotham, Arial, sans-serif;
@@ -35,9 +37,13 @@ h2 {
 }
 
 #loading-img {
-    display: block;
-    height: 100px;
-    animation: loading 0.66s infinite;
+    background:
+            url("../img/loading/1.png") no-repeat,
+            url("../img/loading/2.png") no-repeat,
+            url("../img/loading/3.png") no-repeat,
+            url("../img/loading/4.png") no-repeat;
+    height: 129px;
+    animation: loading 2s infinite;
     animation-timing-function: ease-in-out;
     margin: 25vh auto;
 }

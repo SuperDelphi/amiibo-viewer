@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@media screen and (max-width: 1300px) {
+    #search-bar input {
+        width: 100% !important;
+    }
+
+    #search-bar input + img {
+        position: absolute;
+        right: 1rem;
+        transform: none;
+    }
+
+    main {
+        padding: 10vw !important;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main > h2, main > hr {
+        display: none;
+    }
+
+    #amiibo-list {
+        /* Compense la marge des amiibos en mode mobile */
+        margin-top: -4rem;
+    }
+
+    .sprite-container {
+        min-height: auto !important;
+        max-width: 25vw !important;
+    }
+
+    .amiibo-shadow, .amiibo-btn {
+        display: none;
+    }
+
+    .amiibo {
+        flex: 50%;
+    }
+
+    main {
+        padding: 2.5rem !important;
+    }
+}

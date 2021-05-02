@@ -3,7 +3,7 @@
  */
 
 header {
-    padding: var(--header-padding);
+    padding: 50px 60px;
 }
 
 nav {

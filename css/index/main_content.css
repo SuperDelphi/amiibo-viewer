@@ -21,10 +21,15 @@ main > h2 {
 }
 
 #search-bar {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+}
+
+#search-bar:focus {
+    outline: none;
 }
 
 #search-bar input {

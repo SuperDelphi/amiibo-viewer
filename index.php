@@ -6,6 +6,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Amiibo Viewer | Accueil</title>
         <link rel="shortcut icon" href="favicon.ico">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -16,6 +19,7 @@
         <link rel="stylesheet" href="css/index/main.css">
     </head>
     <body>
+
         <?php include_once "includes/header.php"; ?>
 
         <main>
@@ -25,10 +29,12 @@
             </label>
             <h2 id="amiibo-list-title">Tous les amiibos</h2>
             <hr>
-            <section id="amiibo-list">
-                <img id="loading-img" src="img/loading.png" alt="Chargement des amiibos...">
-            </section>
+            <div id="loading-img"></div>
+            <section id="amiibo-list"></section>
             <div id="bottom-gradient"></div>
         </main>
 
-        <?php include_once "includes/footer.php"; ?>
+        <?php include_once "includes/hamburger.php"; ?>
+
+    </body>
+</html>

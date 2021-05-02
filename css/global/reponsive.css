@@ -1,0 +1,24 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@media screen and (max-width: 1300px) {
+    #random-link, #aside-info > div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header nav ul, header #aside-info {
+        display: none;
+    }
+
+    #hamburger-btn {
+        transform: rotate(-15deg);
+    }
+
+    #hamburger-menu.open {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}

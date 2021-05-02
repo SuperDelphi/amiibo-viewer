@@ -5,12 +5,35 @@
 @keyframes loading {
     0% {
         transform: translateY(10px);
+        background: url("../../img/loading/1.png") no-repeat center center;
+    }
+    12.5% {
+        transform: translateY(-10px);
+    }
+    25% {
+        transform: translateY(10px);
+        background: url("../../img/loading/2.png") no-repeat center center;
+    }
+    37.5% {
+        transform: translateY(-10px);
     }
     50% {
+        transform: translateY(10px);
+        background: url("../../img/loading/3.png") no-repeat center center;
+    }
+    62.5% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+        background: url("../../img/loading/4.png") no-repeat center center;
+    }
+    87.5% {
         transform: translateY(-10px);
     }
     100% {
         transform: translateY(10px);
+        background: url("../../img/loading/1.png") no-repeat center center;
     }
 }
 
