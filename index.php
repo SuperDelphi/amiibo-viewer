@@ -23,10 +23,6 @@
         <?php include_once "includes/header.php"; ?>
 
         <main>
-            <label id="search-bar">
-                <input type="text" placeholder="Rechercher un amiibo...">
-                <img src="img/icons/search_icon.svg" alt="Loupe">
-            </label>
             <h2 id="amiibo-list-title">Tous les amiibos</h2>
             <hr>
             <div id="loading-img"></div>

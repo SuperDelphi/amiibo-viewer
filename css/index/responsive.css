@@ -3,16 +3,6 @@
  */
 
 @media screen and (max-width: 1300px) {
-    #search-bar input {
-        width: 100% !important;
-    }
-
-    #search-bar input + img {
-        position: absolute;
-        right: 1rem;
-        transform: none;
-    }
-
     main {
         padding: 10vw !important;
         background-image: none;
@@ -26,7 +16,7 @@
 
     #amiibo-list {
         /* Compense la marge des amiibos en mode mobile */
-        margin-top: -4rem;
+        margin-top: -2rem;
     }
 
     .sprite-container {

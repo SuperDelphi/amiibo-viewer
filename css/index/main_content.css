@@ -20,39 +20,6 @@ main > h2 {
     margin-bottom: 0;
 }
 
-#search-bar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-#search-bar:focus {
-    outline: none;
-}
-
-#search-bar input {
-    box-sizing: content-box;
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: var(--search-bar-bg);
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    min-width: 25vw;
-    border: none;
-}
-
-#search-bar input + img {
-    height: 1rem;
-    transform: translateX(-2rem);
-}
-
-#search-bar input::placeholder {
-    opacity: 1;
-    color: var(--mid-gray);
-}
-
 .error {
     display: flex;
     justify-content: center;
