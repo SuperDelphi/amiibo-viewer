@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@import "../global.css";
+@import "responsive.css";
+
+main {
+    padding: 10vh 25vw;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.signature {
+    text-align: right;
+    opacity: 0.5;
+}

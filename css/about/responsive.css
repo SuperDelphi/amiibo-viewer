@@ -1,0 +1,13 @@
+/*
+ * Copyright (c) Simon Breil 2021
+ */
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 8vh 15vw !important;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
