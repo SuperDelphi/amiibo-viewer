@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li>
-                <a href="about.html">
+                <a href="about.php">
                     <svg class="simple-icon" viewBox="0 0 121 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          style="stroke:#5a5a5a;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                         <g>
