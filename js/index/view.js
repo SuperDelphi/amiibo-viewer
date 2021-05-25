@@ -64,7 +64,7 @@ const updateListTitle = amiiboAmount => {
 const hideLoading = () => {
     const loadingImg = document.getElementById("loading-img");
     loadingImg.classList.add("hidden");
-}
+};
 
 const displayError = () => {
     const errorElement = document.createElement("div");
